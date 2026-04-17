@@ -11,7 +11,8 @@ const Contact = () => {
         </svg>
       ),
       href: 'mailto:1363831734@qq.com',
-      color: 'from-red-500 to-orange-500'
+      color: 'text-red-400',
+      bgColor: 'bg-red-500/10 hover:bg-red-500/20'
     },
     {
       name: 'GitHub',
@@ -21,7 +22,8 @@ const Contact = () => {
         </svg>
       ),
       href: 'https://github.com/zjs19940723',
-      color: 'from-gray-600 to-gray-400'
+      color: 'text-gray-400',
+      bgColor: 'bg-gray-500/10 hover:bg-gray-500/20'
     },
     {
       name: '个人博客',
@@ -31,7 +33,8 @@ const Contact = () => {
         </svg>
       ),
       href: 'https://zjs.com',
-      color: 'from-purple-500 to-pink-500'
+      color: 'text-purple-400',
+      bgColor: 'bg-purple-500/10 hover:bg-purple-500/20'
     },
   ]
 
@@ -75,10 +78,10 @@ const Contact = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.1, y: -5 }}
-              className={`flex items-center gap-3 px-6 py-4 bg-dark-200 rounded-xl bg-gradient-to-r ${link.color} bg-opacity-20 hover:bg-opacity-30 transition-all duration-300`}
+              whileHover={{ scale: 1.05, y: -5 }}
+              className={`flex items-center gap-3 px-6 py-4 rounded-xl ${link.bgColor} transition-all duration-300`}
             >
-              <span className={`bg-gradient-to-r ${link.color} bg-clip-text text-transparent`}>
+              <span className={link.color}>
                 {link.icon}
               </span>
               <span className="text-gray-300 font-medium">{link.name}</span>
@@ -92,17 +95,28 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="mt-12 text-center space-y-4"
         >
-          <p className="text-gray-400">
-            或者直接发送邮件至：
-          </p>
-          <a
-            href="mailto:1363831734@qq.com"
-            className="text-lg bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent font-medium hover:opacity-80 transition-opacity"
-          >
-            1363831734@qq.com
-          </a>
+          {/* 手机号 */}
+          <div className="flex items-center justify-center gap-2">
+            <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span className="text-gray-300">15061995631</span>
+          </div>
+
+          {/* 邮箱 */}
+          <div className="flex items-center justify-center gap-2">
+            <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a
+              href="mailto:1363831734@qq.com"
+              className="text-gray-300 hover:text-purple-400 transition-colors"
+            >
+              1363831734@qq.com
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
