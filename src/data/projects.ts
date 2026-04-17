@@ -83,7 +83,7 @@ export const projects: Project[] = [
     description: '综合应急管理系统，包括预案中心、演练中心、应急指挥、权限管理等模块。',
     fullDescription: '以监控系统、IT资源管理、自动化系统、工单系统为支撑，对各类资源进行汇集和编排。包括预案中心、演练中心、应急指挥、权限管理等模块。采用 Dubbo 分布式架构，支持大规模数据处理。',
     image: '/images/emergency-manage.png',
-    color: 'from-red-500 to-orange-500',
+    color: 'from-slate-500 to-gray-600',
     icon: 'emergency',
     technologies: ['Spring Boot', 'MySQL', 'Redis', 'Dubbo', 'Zookeeper', 'xxl-job', 'FlyWay'],
     company: '南京慧明软件有限公司',
