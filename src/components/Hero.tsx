@@ -45,7 +45,7 @@ const Hero = () => {
             >
               Hi, 我是{' '}
               <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
-                周建生
+                周员外
               </span>
             </motion.h1>
 
@@ -56,7 +56,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg md:text-xl text-gray-400 mb-6"
             >
-              5年经验的 Java 开发工程师，精通 Spring 全栈技术，专注于构建高性能、可扩展的企业级应用。
+              7年经验的 Java 后端开发工程师，具备 AI Agent 全栈开发能力。精通 Spring 全栈技术，专注于构建高性能、可扩展的企业级应用和 AI 智能体。
             </motion.p>
 
             {/* 按钮 */}

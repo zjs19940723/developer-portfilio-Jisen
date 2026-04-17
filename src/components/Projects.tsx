@@ -46,6 +46,20 @@ const Projects = () => {
           ))}
         </div>
 
+        {/* 项目亮点 */}
+        {project.highlights && project.highlights.length > 0 && (
+          <div className="mb-4">
+            <ul className="text-xs text-gray-500 space-y-1">
+              {project.highlights.map((highlight, idx) => (
+                <li key={idx} className="flex items-start gap-1">
+                  <span className="text-green-400">✓</span>
+                  <span>{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {/* 项目链接 */}
         <div className="flex gap-4">
           {project.demoUrl && (

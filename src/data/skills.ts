@@ -1,8 +1,8 @@
-// 技能数据 - 周建生
+// 技能数据 - 周员外
 export interface Skill {
   name: string
   level: number // 1-5 的熟练程度
-  category: 'backend' | 'database' | 'distributed' | 'tools'
+  category: 'backend' | 'database' | 'distributed' | 'ai' | 'tools'
 }
 
 export const skills: Skill[] = [
@@ -23,7 +23,7 @@ export const skills: Skill[] = [
     category: 'backend'
   },
   {
-    name: 'MyBatis',
+    name: 'MyBatis-Plus',
     level: 4,
     category: 'backend'
   },
@@ -105,8 +105,50 @@ export const skills: Skill[] = [
   },
   {
     name: 'Docker',
+    level: 4,
+    category: 'tools'
+  },
+  {
+    name: 'Nginx',
     level: 3,
     category: 'tools'
+  },
+
+  // AI应用开发
+  {
+    name: 'Spring AI',
+    level: 4,
+    category: 'ai'
+  },
+  {
+    name: 'LangChain4j',
+    level: 3,
+    category: 'ai'
+  },
+  {
+    name: 'RAG知识库',
+    level: 4,
+    category: 'ai'
+  },
+  {
+    name: 'PGvector',
+    level: 3,
+    category: 'ai'
+  },
+  {
+    name: 'Prompt工程',
+    level: 4,
+    category: 'ai'
+  },
+  {
+    name: 'Claude Code',
+    level: 4,
+    category: 'ai'
+  },
+  {
+    name: 'MCP Server',
+    level: 3,
+    category: 'ai'
   },
 ]
 
@@ -120,5 +162,6 @@ export const categoryNames: Record<Skill['category'], string> = {
   backend: '后端开发',
   database: '数据库',
   distributed: '分布式技术',
+  ai: 'AI应用开发',
   tools: '开发工具',
 }
