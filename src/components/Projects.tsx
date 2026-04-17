@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { projects, type Project } from '../data/projects'
 
 // 项目图标SVG
-const projectIcons: Record<string, JSX.Element> = {
+const projectIcons: Record<string, React.ReactNode> = {
   robot: (
     <svg viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
       <path d="M12 2a2 2 0 012 2v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v4a2 2 0 01-2 2h-2v1a2 2 0 01-4 0v-1H8a2 2 0 01-2-2v-4H5a1 1 0 110-2h1V7a2 2 0 012-2h2V4a2 2 0 012-2zm0 4a1 1 0 100 2 1 1 0 000-2zm-4 4v4h8v-4H8zm4 6a1 1 0 100 2 1 1 0 000-2z"/>

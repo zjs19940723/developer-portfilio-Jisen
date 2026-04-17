@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { skills, getSkillsByCategory, categoryNames, type Skill } from '../data/skills'
+import { getSkillsByCategory, categoryNames, type Skill } from '../data/skills'
 
 const About = () => {
   // 技能等级转换为颜色
